@@ -1,0 +1,25 @@
+{
+  "name": "fagundes/total-lines",
+  "description": "Command-script to count the total lines of all files given one or more paths.",
+  "type": "library",
+  "homepage": "https://github.com/fagundes/count-total-lines",
+  "keywords": [
+    "util",
+    "file",
+    "php"
+  ],
+  "authors": [
+    {
+      "name": "Vinicius Fagundes",
+      "email": "eu@viniciusfagundes.com",
+      "homepage": "http://www.viniciusfagundes.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=5.3"
+  },
+  "bin": [
+    "bin/total-lines"
+  ]
+}
