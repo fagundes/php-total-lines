@@ -2,7 +2,7 @@
   "name": "fagundes/total-lines",
   "description": "Command-script to count the total lines of all files given one or more paths.",
   "type": "library",
-  "homepage": "https://github.com/fagundes/count-total-lines",
+  "homepage": "https://github.com/fagundes/php-total-lines",
   "keywords": [
     "util",
     "file",
