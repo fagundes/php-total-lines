@@ -1,4 +1,10 @@
 <?php
+/**
+ * The MIT License (MIT)
+ *
+ * Copyright (c) 2016, Vinicius Fagundes
+ * All rights reserved.
+ */
 
 if ($argc < 2) {
     file_put_contents('php://stderr', 'Usage: total-lines <path-1> [<path-2> ... <path-n>]' . PHP_EOL);
@@ -9,7 +15,7 @@ function count_lines(SplFileObject $fileObject)
 {
     $fileObject->seek($fileObject->getSize());
 
-    return $fileObject->key()+1;
+    return $fileObject->key() + 1;
 }
 
 $directories = array();
@@ -39,8 +45,7 @@ foreach ($directories as $path) {
                 $linesTotal += count_lines($fileInfo->openFile());
             }
         }
-    }
-    else {
+    } else {
         $fileInfo = new SplFileInfo($path);
         $linesTotal += count_lines($fileInfo->openFile());
     }
